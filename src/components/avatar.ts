@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Box from '@mui/material/Box';
+import { Avatar } from '@mui/material';
+import { Box } from '@mui/material';
 
-const App = () => {
+export default function Avatars() {
     return (
         <Box>
             <Avatar
@@ -14,6 +13,4 @@ const App = () => {
             />
         </Box>
     );
-};
-
-export default App;
+  }
