@@ -1,0 +1,9 @@
+.card_transition{
+    transform: scale(1);
+    transition-duration: 300ms;
+}
+
+.card_transition:hover{
+    transform: scale(1.2);
+    transition-duration: 300ms;
+}

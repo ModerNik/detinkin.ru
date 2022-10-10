@@ -1,6 +1,6 @@
-import React, { FC, ReactNode } from 'react';
+import { FC, ReactNode, useState } from 'react';
 import Box from '@mui/material/Box'
-import { borders } from '@mui/system';
+import '../styles/card.css';
 
 interface CardProps {
     width?: string;
@@ -9,6 +9,7 @@ interface CardProps {
     onClick: () => void;
 }
 
+
 const Card: FC<CardProps> = 
     ({
         width,
@@ -16,15 +17,16 @@ const Card: FC<CardProps> =
         children,
         onClick
     }) => {
+    const [state, setState] = useState(0);
     return (
-        <Box 
+        <Box className='card_transition'
             sx={{
                 width,
                 height,
                 borderRadius: '16px',
-                background: '#404040'
+                background: '#404040',
             }}
-            onClick={onClick}
+            onClick={() => onClick()}
             >
             {children}
         </Box>

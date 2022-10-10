@@ -1,0 +1,29 @@
+.bar_container {
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #D1E8E2;
+  }
+
+.bar_button {
+    color: #D1E8E2;
+    transform: scale(1);
+    transition-duration: 400ms;
+}
+
+.bar_button:hover {
+    color: white;
+    transform: scale(1.2);
+    transition-duration: 400ms;
+}
+
+.toolbar {
+    align-items: center;
+}
+
+.nickname {
+    align-self: center;
+}
